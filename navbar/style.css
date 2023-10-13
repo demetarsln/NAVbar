@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+ body{
+    background-image: url(yesil.jpeg);
+    font-family: sans-serif;
+    
+}
+.menü-bar{
+    background: #5b71b5;
+    text-align: center;
+
+}
+.menü-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menü-bar ul li{
+    width: 130px;
+    margin: 16px;
+    padding: 15px;
+}
+.menü-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menü-bar ul li:hover{
+background: #d4c995;
+border-radius: 10px;
+}
+.menü-bar .fas{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menü-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #5b71b5;
+    margin-top: 15px;
+    margin-left: -15px;
+    font-size: 10px;
+
+}
+.menü-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    }
+.menü-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+    cursor: pointer;
+
+}
+.menü-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
+.fa-caret-right{
+    font-size: 14px;
+    color: #fff;
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #5b71b5;
+    
+}
